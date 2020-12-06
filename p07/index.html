@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hnagman Game</title>
+</head>
+<body>
+    <h1>Hangeman</h1>
+<p>Can you guess the hidden word? Please Enter a letter.</p>
+
+<div class="game-container">
+<svg height="250px" width="200px" class="figure-container">
+    
+    <!--plateform-->
+    <line x1="60" x2="140" y1="20" y2="20"/>
+    <line x1="60" x2="60" y1="20" y2="230"/>
+    <line x1="140" x2="140" y1="20" y2="50"/>
+    <line x1="20" x2="100" y1="230" y2="230"/>
+    <!--Body Of Hangman-->
+    <line x1="140" x2="140" y1="90" y2="150" class="HangmanParts" />
+          
+    <!---Head of Hangman-->
+    <circle cx="140" cy="70" r="20" class="HangmanParts"  />
+    <!--Arms Of Hangman-->
+    <line x1="140" x2="120" y1="120" y2="100" class="HangmanParts" />
+    <line x1="140" x2="160" y1="120" y2="100"  class="HangmanParts"/>
+
+    <!--Legs Of Hangman-->
+    <line x1="140" x2="120" y1="150" y2="180" class="HangmanParts" />
+    <line x1="140" x2="160" y1="150" y2="180"  class="HangmanParts"/>
+  
+</svg>
+<div class="wrongeLetters" id="wrongeLetters">
+    
+</div>
+<div class="word" id="word">
+ 
+</div>
+</div>  
+<!----Container for Popup: win or lose-->
+<div class="popup-container" id="popup-container">
+    <div class="popup">
+        <h2 id="win-lose">
+            
+        </h2>
+        <button id="restart">
+            Restart Game
+        </button>
+    </div>
+</div>
+
+<!--container for sliding Notification:Repeat Letter Input-->
+<div class="slider-container" id="slider-container">
+    <p>You have already entered this letter.</p>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
