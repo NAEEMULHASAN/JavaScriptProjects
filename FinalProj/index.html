@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Project20</title>
+</head>
+<body>
+    <!----- main div for calculator--->
+    <form  class="cal" id="form">
+        <!---Screen Of Calculator-->
+        <div class="screen-div">
+            <input type="text" id="screen" class="screen  shadow"  >
+        </div>
+
+        <!--Key Board of Calculator-->
+        <div class="btn">
+            <input type="button" value="1" class="shadow-outer" onclick="form.screen.value+='1' ">
+            <input type="button" value="2" class="shadow-outer" onclick="form.screen.value+='2' ">
+            <input type="button" value="3" class="shadow-outer" onclick="form.screen.value+='3' ">
+            <input type="button" value="+" class="shadow-outer" onclick="form.screen.value+='+' ">
+        </div>
+        <div class="btn">
+            <input type="button" value="4" class="shadow-outer" onclick="form.screen.value+='4' ">
+            <input type="button" value="5" class="shadow-outer" onclick="form.screen.value+='5' ">
+            <input type="button" value="6" class="shadow-outer" onclick="form.screen.value+='6' ">
+            <input type="button" value="-" class="minus-btn" class="shadow-outer" onclick="form.screen.value+='-' ">
+        </div>
+        <div class="btn">
+            <input type="button" value="7" class="shadow-outer" onclick="form.screen.value+='7' ">
+            <input type="button" value="8" class="shadow-outer" onclick="form.screen.value+='8' ">
+            <input type="button" value="9" class="shadow-outer" onclick="form.screen.value+='9' ">
+            <input type="button" value="*" class="multiply-btn" class="shadow-outer" onclick="form.screen.value+='*' " >
+        </div>
+        <div class="btn">
+            <input type="button" value="C" class="shadow-outer clear" onclick="form.screen.value= ' '; " >
+            <input type="button" value="/" class="shadow-outer" onclick="form.screen.value+='/' ">
+            <input type="button" value="0" class="shadow-outer" onclick="form.screen.value+='0' ">
+            <input type="button" value="=" id="equal" class="shadow-outer" onclick="form.screen.value=eval(form.screen.value); ">
+        </div>
+        <div class="btn">
+            <input type="button" value="&radic;" class="end-btn" class="shadow-outer" onclick="form.screen.value=Math.sqrt(form.screen.value); "> 
+            <input type="button" value="." class="end-btn" class="shadow-outer" onclick="form.screen.value+='.' ">
+            <input type="button" value="<" class="end-btn" class="shadow-outer" onclick="form.screen.value+='<' ">
+            
+        </div>
+
+
+    </form>
+    
+</body>
+<script src="script.js"></script>
+</html>
